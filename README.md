@@ -210,6 +210,14 @@ curl http://localhost:5000/api/dashboard
 - Numbers are rounded to one decimal place on the server.
 - `exceeded` is computed server-side and is the single source of truth for the
   red warning state.
+ ## 📸 Application Preview
+
+<p align="center">
+  <img src="https://github.com/uv2404/Calorie-Tracker-Macro-Dashboard/blob/main/Calorie%20Tracker%20%26%20Macro%20Dashboard%20and%2010%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%2021-06-2026%2013_15_43.png" alt="Calorie Tracker Screenshot" width="800"/>
+</p>
+<p align="center">
+  <img src="https://github.com/uv2404/Calorie-Tracker-Macro-Dashboard/blob/main/Calorie%20Tracker%20%26%20Macro%20Dashboard%20and%2010%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%2021-06-2026%2013_15_50.png" alt="Calorie Tracker Screenshot](https://github.com/uv2404/Calorie-Tracker-Macro-Dashboard/blob/main/Calorie%20Tracker%20%26%20Macro%20Dashboard%20and%2010%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%2021-06-2026%2013_15_50.png)" width="800"/>
+</p>
 
 ## License
 MIT
