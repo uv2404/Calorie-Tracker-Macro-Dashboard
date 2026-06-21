@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-900 text-slate-100 antialiased;
+    background-image: radial-gradient(
+        circle at 15% 20%,
+        rgba(59, 130, 246, 0.12),
+        transparent 40%
+      ),
+      radial-gradient(circle at 85% 0%, rgba(16, 185, 129, 0.1), transparent 35%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Reusable glassmorphism card surface. */
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-xl;
+  }
+}
