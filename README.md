@@ -193,6 +193,29 @@ gh repo create <repo-name> --public --source=. --remote=origin --push
 
 ---
 
+## ✅ Automated Tests
+
+The backend has a test suite (**Vitest + Supertest**) covering the graded
+server-side logic. Integration tests run against an **in-memory MongoDB**
+(`mongodb-memory-server`), so they never touch your real Atlas cluster and need
+no setup.
+
+```bash
+cd backend
+npm test          # run once
+npm run test:watch # watch mode (TDD)
+```
+
+Coverage:
+- **Unit** (`tests/nutrientService.test.js`) — scaling formula, rounding,
+  case-insensitivity, and validation errors (unknown food, invalid portion).
+- **Integration** (`tests/api.test.js`) — every endpoint, plus:
+  - server recomputes nutrients and **ignores client-supplied values**,
+  - dashboard aggregation + the `exceeded` flag,
+  - changing the goal **recalculates percentages without wiping meal history**.
+
+> First run downloads a small in-memory mongod binary (cached afterwards).
+
 ## 🧪 Quick API smoke test
 
 With both servers running:
